@@ -1,8 +1,11 @@
 import argparse
 import csv
+import io
 import json
 from pathlib import Path
 from xml.sax.saxutils import escape
+
+from PIL import Image as RasterImage
 
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4
@@ -20,12 +23,13 @@ RESULTS = {
     "regions": ROOT / "region-results-20261021-171356-038",
     "benchmark": ROOT / "benchmark-results-20261021-172020-944",
 }
-NAVY = colors.HexColor("#17324D")
-BLUE = colors.HexColor("#2563A6")
-TEAL = colors.HexColor("#168575")
-MUTED = colors.HexColor("#526273")
-PALE = colors.HexColor("#EDF3F8")
-LINE = colors.HexColor("#D5DFE9")
+NAVY = colors.black
+BLUE = colors.black
+TEAL = colors.HexColor("#666666")
+MUTED = colors.HexColor("#444444")
+PALE = colors.HexColor("#F2F2F2")
+LINE = colors.HexColor("#CCCCCC")
+REPOSITORY_URL = "https://github.com/shikar1/vk-data-engineering-homework"
 WIDTH = A4[0] - 88
 
 
@@ -104,10 +108,18 @@ class ComparisonPlot(Flowable):
                 canvas.setStrokeColor(color)
                 canvas.setFillColor(color)
                 canvas.setLineWidth(1.5)
+                if method == "duckdb":
+                    canvas.setDash(4, 2)
+                else:
+                    canvas.setDash()
                 for previous, following in zip(points, points[1:]):
                     canvas.line(*previous, *following)
+                canvas.setDash()
                 for abscissa, ordinate in points:
-                    canvas.circle(abscissa, ordinate, 3, stroke=1, fill=1)
+                    if method == "duckdb":
+                        canvas.rect(abscissa - 3, ordinate - 3, 6, 6, stroke=1, fill=1)
+                    else:
+                        canvas.circle(abscissa, ordinate, 3, stroke=1, fill=1)
 
 
 class RegionalPlot(Flowable):
@@ -141,8 +153,9 @@ class RegionalPlot(Flowable):
             for index, (value, label) in enumerate(zip(values, ["Москва", "СПб", "Екатеринбург"])):
                 abscissa = left + index * 65 + 9
                 height = value / maximum * plot_height
-                canvas.setFillColor([BLUE, TEAL, colors.HexColor("#B57930")][index])
-                canvas.rect(abscissa, bottom, 34, height, stroke=0, fill=1)
+                canvas.setFillColor([BLUE, TEAL, colors.HexColor("#BBBBBB")][index])
+                canvas.setStrokeColor(colors.black)
+                canvas.rect(abscissa, bottom, 34, height, stroke=1, fill=1)
                 canvas.setFillColor(NAVY)
                 canvas.drawCentredString(abscissa + 17, bottom + height + 6, number(value, 1))
                 canvas.drawCentredString(abscissa + 17, bottom - 15, label)
@@ -189,8 +202,18 @@ def build(author, destination):
     def code(text):
         story.append(Preformatted(clean(text), styles["ReportCode"], maxLineLength=101, splitChars=" "))
 
+    def repository_link(prefix):
+        story.append(Paragraph(
+            f'<b>{escape(prefix)} <link href="{REPOSITORY_URL}" color="#000000">{REPOSITORY_URL}</link></b>',
+            styles["ReportSmall"],
+        ))
+
     def image(filename, maximum_height):
-        widget = Image(str(ROOT / "evidence" / filename))
+        buffer = io.BytesIO()
+        with RasterImage.open(ROOT / "evidence" / filename) as source:
+            source.convert("L").save(buffer, format="PNG")
+        buffer.seek(0)
+        widget = Image(buffer)
         factor = min(WIDTH / widget.imageWidth, maximum_height / widget.imageHeight)
         widget.drawWidth = widget.imageWidth * factor
         widget.drawHeight = widget.imageHeight * factor
@@ -211,10 +234,8 @@ def build(author, destination):
     story.append(Spacer(1, 34))
     add("ДОМАШНЕЕ ЗАДАНИЕ / ИНЖЕНЕРИЯ ДАННЫХ", True)
     story.append(Paragraph("Аналитика IT-вакансий<br/>в RustFS", styles["ReportTitle"]))
-    add("Собственный MapReduce, независимый SQL-расчёт DuckDB, анализ зарплат и регионов, профилирование времени и памяти.")
     story.append(Spacer(1, 20))
     table(["Автор", "Индивидуальный сегмент"], [[author, "DevOps-инженер\nФильтрация по столбцу role"]], [1, 1])
-    add("Дата выполнения: 21 октября 2026 года. Время локальных запусков указано по Москве; суффиксы объектов S3 сформированы в UTC.")
     heading("Основные результаты", True)
     table(["Показатель", "Полученный результат"], [
         ["Исходные данные", "229 388 строк; 847 619 384 байта"],
@@ -223,8 +244,7 @@ def build(author, destination):
         ["Зарплаты и регионы", "762 сопоставимые зарплаты; 3 региона"],
         ["Профилирование и отказ", "По 3 попытки; управляемый отказ и полный перезапуск"],
     ], [1, 1.8])
-    add("Репозиторий: https://github.com/shikar1/vk-data-engineering-homework", True)
-    add("Отчёт построен по сохранённым результатам фактических запусков. Скриншоты предоставлены автором; таблицы и графики рассчитаны по исходным CSV/JSON артефактам.", True)
+    repository_link("Репозиторий:")
 
     page("1. Хранилище и исходные данные")
     add("Использован ранее развёрнутый контейнер rustfs-lab2. S3 доступен на localhost:9000, консоль - localhost:9001. Программы работают в Docker и обращаются к S3 через host.docker.internal:9000.")
@@ -308,7 +328,7 @@ def build(author, destination):
     page("10. Время и память: результаты")
     table(["Метод", "Медиана времени, с", "Мин - макс, с", "SD времени, с", "Медиана RSS, МиБ", "Макс. RSS, МиБ"], [[row["method"], number(row["median_wall_seconds"], 3), number(row["min_wall_seconds"], 2) + " - " + number(row["max_wall_seconds"], 2), number(row["stdev_wall_seconds"], 2), number(row["median_peak_rss_mib"], 2), number(row["max_peak_rss_mib"], 2)] for row in summary], [1, 1, 1.2, 0.9, 1, 1])
     story.append(ComparisonPlot(runs))
-    add("Синий - MapReduce; зелёный - DuckDB. Каждая точка соответствует одной фактической попытке; номер попытки не означает последовательный запуск только одного метода.", True)
+    add("Сплошная линия и круги - MapReduce; пунктир и квадраты - DuckDB. Каждая точка соответствует одной фактической попытке; номер попытки не означает последовательный запуск только одного метода.", True)
     image("benchmark-terminal.png", 125)
     add("Рисунок 3. Предоставленный автором скриншот вывода PowerShell с шестью измерениями и проверкой all_tables_equal=True.", True)
     add("Медиана времени: 74,214 с у MapReduce и 79,729 с у DuckDB. Диапазоны перекрываются, разброс велик; устойчивое превосходство по скорости тремя попытками не доказано. Медиана пиков RSS у MapReduce примерно в 12,20 раза меньше (79,25 против 966,52 МиБ).")
@@ -327,7 +347,8 @@ def build(author, destination):
     add("Предварительные условия: Docker Desktop, работающий rustfs-lab2, бакет hh-lake и исходный объект it_vacancies_2024.csv. В репозитории исходный CSV не дублируется. Ключи должны быть доступны в окружении контейнера RustFS.")
     code("Set-Location .\\devops-lab\n\n# Проверка столбцов и примеров исходного CSV\n& .\\run.ps1 -Inspect\n\n# MapReduce и SQL с полной сверкой\n& .\\run.ps1\n& .\\run-duckdb.ps1\n\n# Зарплаты и три региона\n& .\\run-analysis.ps1\n& .\\run-regions.ps1\n\n# По 3 замера и тест отказа/перезапуска\n& .\\run-benchmark.ps1")
     table(["Файлы", "Назначение"], [["mapreduce.py; run.ps1", "Потоковый расчёт и работа с S3"], ["duckdb.sql; duckdb_run.py", "Независимый SQL и полная сверка"], ["analysis-source.sql; salary.sql; analysis_run.py", "Фильтрация зарплат, медианы и выбор базы"], ["regions.sql; regional_analysis.py", "Частоты, доли, зарплаты и независимая проверка регионов"], ["benchmark_worker.py; benchmark_run.py", "Свежие процессы, замеры и тест отказа"], ["Dockerfile.duckdb; скрипты *.ps1", "Воспроизводимое окружение без Python в Windows"], ["build_report.py; evidence/; report/", "Генератор PDF, оригинальные скриншоты и готовый отчёт"]], [1.7, 1.8])
-    add("Репозиторий назначения: https://github.com/shikar1/vk-data-engineering-homework. Материалы работы размещаются в отдельной папке devops-lab. В комплект входят исходные программы, фактические таблицы и логи, настройки замеров и PDF.", True)
+    repository_link("Репозиторий:")
+    add("Материалы работы размещены в отдельной папке devops-lab. В комплект входят исходные программы, фактические таблицы и логи, настройки замеров и PDF.", True)
 
     page("13. Выводы и ограничения")
     for text in ["Построен рабочий пайплайн от S3-объекта RustFS до частот, зарплатных и региональных таблиц. Выбор варианта задан собственным условием по role и подтверждён числом 5 158.",
@@ -355,7 +376,6 @@ def build(author, destination):
         canvas.setFillColor(MUTED)
         canvas.setFont("Body", 7)
         canvas.drawString(44, A4[1] - 23, "DEVOPS / RUSTFS / MAPREDUCE / DUCKDB")
-        canvas.drawString(44, 24, author)
         canvas.drawRightString(A4[0] - 44, 24, str(document.page))
         canvas.restoreState()
 
