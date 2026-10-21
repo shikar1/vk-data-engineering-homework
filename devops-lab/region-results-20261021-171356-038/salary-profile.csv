@@ -1,0 +1,9 @@
+﻿currency,gross,vacancies,with_positive_salary,reversed_ranges
+<missing>,<missing>,4047,0,0
+RUR,false,762,762,0
+RUR,true,275,275,0
+USD,false,41,41,0
+EUR,false,17,17,0
+USD,true,12,12,0
+EUR,true,3,3,0
+BYR,true,1,1,0

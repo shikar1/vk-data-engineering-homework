@@ -1,0 +1,4 @@
+﻿region,vacancies,with_skills,without_skills,salary_count,salary_count_with_skills,salary_coverage_pct,median_salary_rub,salary_q25_rub,salary_q75_rub
+Москва,3007,2015,992,406,290,13.501829065513801,250000.0,200000.0,325000.0
+Санкт-Петербург,686,488,198,103,87,15.01457725947522,220000.0,165000.0,275000.0
+Екатеринбург,188,136,52,34,30,18.085106382978722,150000.0,112500.0,200000.0

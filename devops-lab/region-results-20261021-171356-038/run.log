@@ -1,0 +1,144 @@
+SOURCE: s3://hh-lake/it_vacancies_2024.csv; ROLE: DevOps-инженер
+SALARY PROFILE: [
+  {
+    "currency": "<missing>",
+    "gross": "<missing>",
+    "vacancies": 4047,
+    "with_positive_salary": 0,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "RUR",
+    "gross": "false",
+    "vacancies": 762,
+    "with_positive_salary": 762,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "RUR",
+    "gross": "true",
+    "vacancies": 275,
+    "with_positive_salary": 275,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "USD",
+    "gross": "false",
+    "vacancies": 41,
+    "with_positive_salary": 41,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "EUR",
+    "gross": "false",
+    "vacancies": 17,
+    "with_positive_salary": 17,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "USD",
+    "gross": "true",
+    "vacancies": 12,
+    "with_positive_salary": 12,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "EUR",
+    "gross": "true",
+    "vacancies": 3,
+    "with_positive_salary": 3,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "BYR",
+    "gross": "true",
+    "vacancies": 1,
+    "with_positive_salary": 1,
+    "reversed_ranges": 0
+  }
+]
+TOP AREAS: [
+  {
+    "area": "Москва",
+    "vacancies": 3007
+  },
+  {
+    "area": "Санкт-Петербург",
+    "vacancies": 686
+  },
+  {
+    "area": "Екатеринбург",
+    "vacancies": 188
+  },
+  {
+    "area": "Новосибирск",
+    "vacancies": 160
+  },
+  {
+    "area": "Казань",
+    "vacancies": 130
+  },
+  {
+    "area": "Нижний Новгород",
+    "vacancies": 116
+  },
+  {
+    "area": "Ростов-на-Дону",
+    "vacancies": 74
+  },
+  {
+    "area": "Самара",
+    "vacancies": 71
+  },
+  {
+    "area": "Томск",
+    "vacancies": 51
+  },
+  {
+    "area": "Краснодар",
+    "vacancies": 48
+  }
+]
+
+REGIONAL OVERVIEW: [
+  {
+    "region": "Москва",
+    "vacancies": 3007,
+    "with_skills": 2015,
+    "without_skills": 992,
+    "salary_count": 406,
+    "salary_count_with_skills": 290,
+    "salary_coverage_pct": 13.501829065513801,
+    "median_salary_rub": 250000.0,
+    "salary_q25_rub": 200000.0,
+    "salary_q75_rub": 325000.0
+  },
+  {
+    "region": "Санкт-Петербург",
+    "vacancies": 686,
+    "with_skills": 488,
+    "without_skills": 198,
+    "salary_count": 103,
+    "salary_count_with_skills": 87,
+    "salary_coverage_pct": 15.01457725947522,
+    "median_salary_rub": 220000.0,
+    "salary_q25_rub": 165000.0,
+    "salary_q75_rub": 275000.0
+  },
+  {
+    "region": "Екатеринбург",
+    "vacancies": 188,
+    "with_skills": 136,
+    "without_skills": 52,
+    "salary_count": 34,
+    "salary_count_with_skills": 30,
+    "salary_coverage_pct": 18.085106382978722,
+    "median_salary_rub": 150000.0,
+    "salary_q25_rub": 112500.0,
+    "salary_q75_rub": 200000.0
+  }
+]
+REGIONAL VALIDATION: {"full_frequency_match": true, "frequency_rows_checked": 169854, "regional_summary_match": true, "top_stack_salary_medians_checked": 90, "method": "Independent Python combinations/Counter for every regional frequency; statistics.median for summaries and top stacks; uses S3-derived normalized row data"}
+REGIONAL_ANALYSIS: PASS
+S3_READ_BACK: PASS
+RESULT: s3://hh-lake/regions/devops/20261021T141449855514Z/

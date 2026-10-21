@@ -1,0 +1,21 @@
+{
+  "python": "3.12.15",
+  "duckdb": "1.4.3",
+  "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "container_cpu_quota": "200000 100000",
+  "container_memory_limit_bytes": "2147483648",
+  "source_identity_before_and_after": {
+    "ETag": "\"5d93ef0c42e6ce7b734cc44a89c4f228-102\"",
+    "Content-Length": "847619384",
+    "Last-Modified": "Wed, 21 Oct 2026 13:35:50 GMT"
+  },
+  "attempts_per_method": 3,
+  "timing_scope": "Fresh child Python process creation through termination: imports, connection setup, S3 read, normalization, 1/2/3-skill aggregation, sorting and local canonical CSV export. Same scope for both methods.",
+  "memory_scope": "Exact child lifetime peak RSS from Linux wait4 rusage, MiB. Includes runtime, libraries and CSV buffers; excludes controller and RustFS server. Not whole-machine or GPU memory.",
+  "excluded": "Docker startup/image build, parent reference validation, S3 result upload, read-back verification and fault/recovery tests are outside the six timed benchmark runs.",
+  "parallelism": "Container allowance 2 CPUs, 2 GiB RAM. DuckDB threads=2 and memory_limit=1GB; CSV parallel=false. MapReduce is single-process and single-threaded. This compares these implementations, not engines at identical internal parallelism.",
+  "cache_policy": "No OS/RustFS cache clearing or discarded warm-up. Alternating method order across rounds; each run is a fresh process in the same container. Earlier lab runs already read the source; no cold-cache performance claim.",
+  "verification": "All three complete sorted CSV SHA256 hashes match the verified MapReduce manifest on every measured run.",
+  "s3_prefix": "benchmark/devops/20261021T142021716249Z"
+}

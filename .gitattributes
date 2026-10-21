@@ -1,0 +1,9 @@
+* text=auto eol=lf
+*.csv -text
+*.png binary
+*.pdf binary
+devops-lab/results-*/** -text
+devops-lab/duckdb-results-*/** -text
+devops-lab/salary-results-*/** -text
+devops-lab/region-results-*/** -text
+devops-lab/benchmark-results-*/** -text

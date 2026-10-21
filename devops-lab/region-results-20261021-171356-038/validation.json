@@ -1,0 +1,7 @@
+{
+  "full_frequency_match": true,
+  "frequency_rows_checked": 169854,
+  "regional_summary_match": true,
+  "top_stack_salary_medians_checked": 90,
+  "method": "Independent Python combinations/Counter for every regional frequency; statistics.median for summaries and top stacks; uses S3-derived normalized row data"
+}

@@ -1,0 +1,46 @@
+DUCKDB: 1.4.3
+SOURCE: s3://hh-lake/it_vacancies_2024.csv
+
+skills.csv: rows=1401, occurrences=28336, differences=0, equal=True
+  linux: 2190
+  kubernetes: 1862
+  docker: 1850
+  devops: 1319
+  ansible: 1252
+  python: 1058
+  ci/cd: 1044
+  bash: 925
+  postgresql: 892
+  grafana: 830
+
+pairs.csv: rows=20454, occurrences=134651, differences=0, equal=True
+  docker + kubernetes: 1251
+  docker + linux: 1208
+  kubernetes + linux: 1162
+  ansible + linux: 871
+  devops + linux: 842
+  devops + kubernetes: 816
+  devops + docker: 813
+  ansible + docker: 786
+  ansible + kubernetes: 772
+  linux + python: 738
+
+triples.csv: rows=144024, occurrences=506549, differences=0, equal=True
+  docker + kubernetes + linux: 804
+  devops + docker + kubernetes: 585
+  ansible + docker + kubernetes: 552
+  ansible + docker + linux: 546
+  devops + docker + linux: 542
+  ansible + kubernetes + linux: 532
+  devops + kubernetes + linux: 526
+  ci/cd + docker + kubernetes: 435
+  bash + linux + python: 414
+  docker + grafana + kubernetes: 412
+
+TOTAL: 229388
+MATCHED: 5158
+WITHOUT_SKILLS: 1624
+FULL_COMPARISON: PASS
+RESULT: s3://hh-lake/duckdb/devops/20261021T140217322374Z/
+SQL_SECONDS: 39.436
+PROCESS_PEAK_RSS_MIB: 924.3

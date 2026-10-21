@@ -1,0 +1,21 @@
+﻿stack_size,stack,baseline_stack,added_skill,vacancies,salary_count,median_salary_rub,baseline_vacancies,baseline_salary_count,baseline_median_salary_rub,difference_rub,difference_pct,eligible
+2,postgresql + zabbix,postgresql,zabbix,208,48,192500.0,892,199,250000.0,-57500.0,-23.0,True
+2,nginx + postgresql,postgresql,nginx,236,84,200000.0,892,199,250000.0,-50000.0,-19.999999999999996,True
+2,git + grafana,grafana,git,246,53,200000.0,830,172,250000.0,-50000.0,-19.999999999999996,True
+2,git + python,python,git,282,53,180000.0,1058,146,225000.0,-45000.0,-19.999999999999996,True
+2,ansible + zabbix,ansible,zabbix,232,48,200000.0,1252,200,250000.0,-50000.0,-19.999999999999996,True
+2,kubernetes + администрирование серверов linux,kubernetes,администрирование серверов linux,168,47,200000.0,1862,294,250000.0,-50000.0,-19.999999999999996,True
+2,postgresql + администрирование серверов linux,postgresql,администрирование серверов linux,130,44,200000.0,892,199,250000.0,-50000.0,-19.999999999999996,True
+2,mysql + postgresql,postgresql,mysql,117,43,200000.0,892,199,250000.0,-50000.0,-19.999999999999996,True
+2,elk + postgresql,postgresql,elk,158,39,200000.0,892,199,250000.0,-50000.0,-19.999999999999996,True
+2,grafana + redis,grafana,redis,83,33,200000.0,830,172,250000.0,-50000.0,-19.999999999999996,True
+3,git + grafana + prometheus,grafana + prometheus,git,144,30,160000.0,513,99,250000.0,-90000.0,-36.0,True
+3,postgresql + prometheus + zabbix,postgresql + prometheus,zabbix,85,23,160000.0,263,66,250000.0,-90000.0,-36.0,True
+3,ansible + postgresql + zabbix,ansible + postgresql,zabbix,100,24,167500.0,346,84,250000.0,-82500.0,-32.99999999999999,True
+3,devops + git + grafana,devops + grafana,git,113,30,145000.0,378,92,210000.0,-65000.0,-30.952380952380953,True
+3,bash + docker + git,bash + docker,git,156,40,155000.0,561,110,222500.0,-67500.0,-30.33707865168539,True
+3,git + postgresql + prometheus,postgresql + prometheus,git,83,20,175000.0,263,66,250000.0,-75000.0,-30.000000000000004,True
+3,ansible + elk + zabbix,ansible + elk,zabbix,80,21,160000.0,267,52,225000.0,-65000.0,-28.888888888888886,True
+3,ansible + python + zabbix,ansible + python,zabbix,93,24,180000.0,463,69,250000.0,-70000.0,-28.000000000000004,True
+3,ansible + grafana + zabbix,ansible + grafana,zabbix,147,21,180000.0,456,89,250000.0,-70000.0,-28.000000000000004,True
+3,ansible + prometheus + zabbix,ansible + prometheus,zabbix,127,28,182500.0,392,84,250000.0,-67500.0,-27.0,True

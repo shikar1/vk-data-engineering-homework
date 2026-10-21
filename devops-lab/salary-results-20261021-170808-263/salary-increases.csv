@@ -1,0 +1,21 @@
+﻿stack_size,stack,baseline_stack,added_skill,vacancies,salary_count,median_salary_rub,baseline_vacancies,baseline_salary_count,baseline_median_salary_rub,difference_rub,difference_pct,eligible
+2,devops + terraform,devops,terraform,209,46,295000.0,1319,254,200000.0,95000.0,47.50000000000001,True
+2,devops + elk,devops,elk,184,54,257500.0,1319,254,200000.0,57500.0,28.750000000000007,True
+2,kubernetes + linux,linux,kubernetes,1162,200,250000.0,2190,365,200000.0,50000.0,25.0,True
+2,ansible + linux,linux,ansible,871,141,250000.0,2190,365,200000.0,50000.0,25.0,True
+2,linux + prometheus,linux,prometheus,477,104,250000.0,2190,365,200000.0,50000.0,25.0,True
+2,ci/cd + devops,devops,ci/cd,399,95,250000.0,1319,254,200000.0,50000.0,25.0,True
+2,devops + prometheus,devops,prometheus,306,82,250000.0,1319,254,200000.0,50000.0,25.0,True
+2,elk + linux,linux,elk,313,73,250000.0,2190,365,200000.0,50000.0,25.0,True
+2,devops + gitlab,devops,gitlab,306,69,250000.0,1319,254,200000.0,50000.0,25.0,True
+2,linux + terraform,linux,terraform,312,56,250000.0,2190,365,200000.0,50000.0,25.0,True
+3,bash + devops + elk,bash + devops,elk,49,22,350000.0,378,88,230000.0,120000.0,52.17391304347827,True
+3,devops + linux + terraform,devops + linux,terraform,131,33,300000.0,842,182,200000.0,100000.0,50.0,True
+3,ansible + git + gitlab,ansible + git,gitlab,76,23,300000.0,353,68,212500.0,87500.0,41.176470588235304,True
+3,ansible + devops + gitlab,ansible + devops,gitlab,164,37,300000.0,493,99,215000.0,85000.0,39.53488372093024,True
+3,devops + gitlab + linux,devops + linux,gitlab,220,61,275000.0,842,182,200000.0,75000.0,37.5,True
+3,git + gitlab + linux,git + linux,gitlab,105,31,275000.0,584,117,200000.0,75000.0,37.5,True
+3,ci/cd + gitlab + python,ci/cd + python,gitlab,106,30,275000.0,312,53,200000.0,75000.0,37.5,True
+3,ci/cd + prometheus + python,ci/cd + python,prometheus,81,20,275000.0,312,53,200000.0,75000.0,37.5,True
+3,bash + ci/cd + gitlab,bash + ci/cd,gitlab,90,31,300000.0,281,56,222500.0,77500.0,34.8314606741573,True
+3,devops + elk + grafana,devops + grafana,elk,125,38,277500.0,378,92,210000.0,67500.0,32.14285714285714,True

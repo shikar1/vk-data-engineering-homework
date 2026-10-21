@@ -1,0 +1,19 @@
+{
+  "total": 229388,
+  "matched": 5158,
+  "without_skills": 1624,
+  "tables": {
+    "skills": {
+      "rows": 1401,
+      "occurrences": 28336
+    },
+    "pairs": {
+      "rows": 20454,
+      "occurrences": 134651
+    },
+    "triples": {
+      "rows": 144024,
+      "occurrences": 506549
+    }
+  }
+}

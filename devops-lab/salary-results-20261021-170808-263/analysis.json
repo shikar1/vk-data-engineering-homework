@@ -1,0 +1,57 @@
+{
+  "source": "s3://hh-lake/it_vacancies_2024.csv",
+  "role": "DevOps-инженер",
+  "total": 229388,
+  "matched": 5158,
+  "duckdb_version": "1.4.3",
+  "currency": "RUR/RUB",
+  "gross": false,
+  "minimum_salary_count": 20,
+  "salary_proxy": "Midpoint of two bounds; the supplied bound when only one is present. Positive finite bounds only; reversed ranges excluded.",
+  "baseline": "Most frequent contained single skill for a pair; most frequent contained pair for a triple. Frequency counted over all 5158 role-matching rows; lexical tie break. Baseline includes combination observations.",
+  "ranking": "Median difference relative to baseline median, descending/ascending percent. Both salary counts must be at least 20.",
+  "limitations": "Observational association, not causal effect. No exchange-rate or tax conversion. Experience, region and employer are not controlled. Frequencies count source rows rather than unique vacancy IDs. One-sided salary ranges are approximate.",
+  "overview": {
+    "vacancies": 5158,
+    "salary_count": 762,
+    "median_salary_rub": 210000.0,
+    "salary_count_with_skills": 564
+  },
+  "quality": [
+    {
+      "salary_status": "missing_salary",
+      "vacancies": 4047
+    },
+    {
+      "salary_status": "included",
+      "vacancies": 762
+    },
+    {
+      "salary_status": "other_tax_basis",
+      "vacancies": 275
+    },
+    {
+      "salary_status": "other_currency",
+      "vacancies": 74
+    }
+  ],
+  "coverage": [
+    {
+      "stack_size": 2,
+      "all_combinations": 20454,
+      "eligible_combinations": 236,
+      "positive": 77,
+      "negative": 79,
+      "unchanged": 80
+    },
+    {
+      "stack_size": 3,
+      "all_combinations": 144024,
+      "eligible_combinations": 688,
+      "positive": 190,
+      "negative": 322,
+      "unchanged": 176
+    }
+  ],
+  "s3_prefix": "salary/devops/20261021T140856183615Z"
+}

@@ -1,0 +1,12 @@
+﻿region,salary_status,vacancies
+Екатеринбург,missing_salary,147
+Екатеринбург,included,34
+Екатеринбург,other_tax_basis,7
+Москва,missing_salary,2434
+Москва,included,406
+Москва,other_tax_basis,117
+Москва,other_currency,50
+Санкт-Петербург,missing_salary,525
+Санкт-Петербург,included,103
+Санкт-Петербург,other_tax_basis,44
+Санкт-Петербург,other_currency,14

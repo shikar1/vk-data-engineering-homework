@@ -1,0 +1,70 @@
+{
+  "complete": true,
+  "files": {
+    "analysis.json": {
+      "key": "regions/devops/20261021T141449855514Z/analysis.json",
+      "sha256": "886b0ea7ac7a3c15779e3a79af767b28cd74ba254142d5364f13e406304c926f",
+      "read_back_verified": true
+    },
+    "area-profile.csv": {
+      "key": "regions/devops/20261021T141449855514Z/area-profile.csv",
+      "sha256": "2e6a7a0d09ec5329bd8231a1f977cce8c9662af3e7c5ea7aed8d8ff377c6e55b",
+      "read_back_verified": true
+    },
+    "regional-combination-growth.csv": {
+      "key": "regions/devops/20261021T141449855514Z/regional-combination-growth.csv",
+      "sha256": "e36cab05daa7c06cf62ab3b364d8ad6333f84e3ed23393c01226c9d856a31e46",
+      "read_back_verified": true
+    },
+    "regional-common-stacks.csv": {
+      "key": "regions/devops/20261021T141449855514Z/regional-common-stacks.csv",
+      "sha256": "c617be841be7371e5bbfb4abd954e1da5337ecea44a3349feade468aac290c3a",
+      "read_back_verified": true
+    },
+    "regional-overview.csv": {
+      "key": "regions/devops/20261021T141449855514Z/regional-overview.csv",
+      "sha256": "aff38ece34399626d73de57702eee8739ac5c89e49cf4d1e9ce56e023eba3a43",
+      "read_back_verified": true
+    },
+    "regional-pairs.csv": {
+      "key": "regions/devops/20261021T141449855514Z/regional-pairs.csv",
+      "sha256": "b2fb74eed76f030cd95f1f9a6c4ddf32dcb540b37ca2529c7f133efbe8895876",
+      "read_back_verified": true
+    },
+    "regional-salary-quality.csv": {
+      "key": "regions/devops/20261021T141449855514Z/regional-salary-quality.csv",
+      "sha256": "3dfedeef2a55b859db9cfd4b1639e78b0de594ff14e1f03ff49927ab78f21d55",
+      "read_back_verified": true
+    },
+    "regional-skills.csv": {
+      "key": "regions/devops/20261021T141449855514Z/regional-skills.csv",
+      "sha256": "aebf405c0092ec7f14d2e379dbdc9843ef9909004abfb56fd4bb4514e334e891",
+      "read_back_verified": true
+    },
+    "regional-top-stacks.csv": {
+      "key": "regions/devops/20261021T141449855514Z/regional-top-stacks.csv",
+      "sha256": "9578dd7d2523dee2d4afc5fdcb6dc5f400e1e79e809423057b50de05440d1aac",
+      "read_back_verified": true
+    },
+    "regional-triples.csv": {
+      "key": "regions/devops/20261021T141449855514Z/regional-triples.csv",
+      "sha256": "0bc024f9db55f2b143633787ee106500642d27bfabe4670684535410cfcd927d",
+      "read_back_verified": true
+    },
+    "salary-profile.csv": {
+      "key": "regions/devops/20261021T141449855514Z/salary-profile.csv",
+      "sha256": "2683e4d784290e0e55a883926cc00e3ecaaf05351aa7aca353bf307125d3ed3f",
+      "read_back_verified": true
+    },
+    "summary.md": {
+      "key": "regions/devops/20261021T141449855514Z/summary.md",
+      "sha256": "df7ac67a6faa5a8b10bcfff77ac23cc61041b7c492218ff6686e9b66e23c94fb",
+      "read_back_verified": true
+    },
+    "validation.json": {
+      "key": "regions/devops/20261021T141449855514Z/validation.json",
+      "sha256": "590fabd0eba5b79203004b14a2a30b65a9cd76841bc908800a3e0d180cef2bbc",
+      "read_back_verified": true
+    }
+  }
+}

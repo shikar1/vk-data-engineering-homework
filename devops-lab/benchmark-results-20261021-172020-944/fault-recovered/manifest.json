@@ -1,0 +1,31 @@
+{
+  "source": "s3://hh-lake/it_vacancies_2024.csv",
+  "role": "DevOps-инженер",
+  "total": 229388,
+  "matched": 5158,
+  "without_skills": 1624,
+  "normalization": "whitespace collapsed, casefold, unique skills per vacancy; unordered combinations",
+  "files": {
+    "skills.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/fault-recovered/skills.csv",
+      "rows": 1401,
+      "occurrences": 28336,
+      "sha256": "296254c141ead06cde2c80f6cbf45ee72472bd9776c13530fbe590c5a689c719",
+      "read_back_verified": true
+    },
+    "pairs.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/fault-recovered/pairs.csv",
+      "rows": 20454,
+      "occurrences": 134651,
+      "sha256": "85c79968c48c43bf43c2ff3cdd07c75a80c1e96bdeea253977e5694d4da5078b",
+      "read_back_verified": true
+    },
+    "triples.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/fault-recovered/triples.csv",
+      "rows": 144024,
+      "occurrences": 506549,
+      "sha256": "627272a10df6ce6fc25d15935458709c97296843a1f7ebc05af619954e15262c",
+      "read_back_verified": true
+    }
+  }
+}

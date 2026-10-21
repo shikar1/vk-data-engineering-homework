@@ -1,0 +1,124 @@
+SOURCE: s3://hh-lake/it_vacancies_2024.csv; ROLE: DevOps-инженер
+SALARY PROFILE: [
+  {
+    "currency": "<missing>",
+    "gross": "<missing>",
+    "vacancies": 4047,
+    "with_positive_salary": 0,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "RUR",
+    "gross": "false",
+    "vacancies": 762,
+    "with_positive_salary": 762,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "RUR",
+    "gross": "true",
+    "vacancies": 275,
+    "with_positive_salary": 275,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "USD",
+    "gross": "false",
+    "vacancies": 41,
+    "with_positive_salary": 41,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "EUR",
+    "gross": "false",
+    "vacancies": 17,
+    "with_positive_salary": 17,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "USD",
+    "gross": "true",
+    "vacancies": 12,
+    "with_positive_salary": 12,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "EUR",
+    "gross": "true",
+    "vacancies": 3,
+    "with_positive_salary": 3,
+    "reversed_ranges": 0
+  },
+  {
+    "currency": "BYR",
+    "gross": "true",
+    "vacancies": 1,
+    "with_positive_salary": 1,
+    "reversed_ranges": 0
+  }
+]
+TOP AREAS: [
+  {
+    "area": "Москва",
+    "vacancies": 3007
+  },
+  {
+    "area": "Санкт-Петербург",
+    "vacancies": 686
+  },
+  {
+    "area": "Екатеринбург",
+    "vacancies": 188
+  },
+  {
+    "area": "Новосибирск",
+    "vacancies": 160
+  },
+  {
+    "area": "Казань",
+    "vacancies": 130
+  },
+  {
+    "area": "Нижний Новгород",
+    "vacancies": 116
+  },
+  {
+    "area": "Ростов-на-Дону",
+    "vacancies": 74
+  },
+  {
+    "area": "Самара",
+    "vacancies": 71
+  },
+  {
+    "area": "Томск",
+    "vacancies": 51
+  },
+  {
+    "area": "Краснодар",
+    "vacancies": 48
+  }
+]
+
+SALARY OVERVIEW: {"vacancies": 5158, "salary_count": 762, "median_salary_rub": 210000.0, "salary_count_with_skills": 564}
+RANKING COVERAGE: [{"stack_size": 2, "all_combinations": 20454, "eligible_combinations": 236, "positive": 77, "negative": 79, "unchanged": 80}, {"stack_size": 3, "all_combinations": 144024, "eligible_combinations": 688, "positive": 190, "negative": 322, "unchanged": 176}]
+
+INCREASES
+  devops + terraform | base=devops | 295000 vs 200000 RUB | +47.50% | n=46
+  devops + elk | base=devops | 257500 vs 200000 RUB | +28.75% | n=54
+  kubernetes + linux | base=linux | 250000 vs 200000 RUB | +25.00% | n=200
+  bash + devops + elk | base=bash + devops | 350000 vs 230000 RUB | +52.17% | n=22
+  devops + linux + terraform | base=devops + linux | 300000 vs 200000 RUB | +50.00% | n=33
+  ansible + git + gitlab | base=ansible + git | 300000 vs 212500 RUB | +41.18% | n=23
+
+DECREASES
+  postgresql + zabbix | base=postgresql | 192500 vs 250000 RUB | -23.00% | n=48
+  nginx + postgresql | base=postgresql | 200000 vs 250000 RUB | -20.00% | n=84
+  git + grafana | base=grafana | 200000 vs 250000 RUB | -20.00% | n=53
+  git + grafana + prometheus | base=grafana + prometheus | 160000 vs 250000 RUB | -36.00% | n=30
+  postgresql + prometheus + zabbix | base=postgresql + prometheus | 160000 vs 250000 RUB | -36.00% | n=23
+  ansible + postgresql + zabbix | base=ansible + postgresql | 167500 vs 250000 RUB | -33.00% | n=24
+
+SALARY_ANALYSIS: PASS
+RESULT: s3://hh-lake/salary/devops/20261021T140856183615Z/
+S3_READ_BACK: PASS

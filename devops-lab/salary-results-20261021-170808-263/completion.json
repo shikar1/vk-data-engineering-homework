@@ -1,0 +1,65 @@
+{
+  "complete": true,
+  "files": {
+    "analysis.json": {
+      "key": "salary/devops/20261021T140856183615Z/analysis.json",
+      "sha256": "e37607723f3d1c09e4605edde7fd3929b0ebd460c8a0879f50a628b27362bc3f",
+      "read_back_verified": true
+    },
+    "area-profile.csv": {
+      "key": "salary/devops/20261021T140856183615Z/area-profile.csv",
+      "sha256": "2e6a7a0d09ec5329bd8231a1f977cce8c9662af3e7c5ea7aed8d8ff377c6e55b",
+      "read_back_verified": true
+    },
+    "pairs-salary-effects.csv": {
+      "key": "salary/devops/20261021T140856183615Z/pairs-salary-effects.csv",
+      "sha256": "a8cbe451f92e98383257c8ecf80875c87b0bc19afa652676e338171bc1169397",
+      "read_back_verified": true
+    },
+    "salary-decreases.csv": {
+      "key": "salary/devops/20261021T140856183615Z/salary-decreases.csv",
+      "sha256": "33e28a7fd3c1b68e0738bccdd25b62267c7340ddde335c04c91819893c401f9b",
+      "read_back_verified": true
+    },
+    "salary-increases.csv": {
+      "key": "salary/devops/20261021T140856183615Z/salary-increases.csv",
+      "sha256": "89599170bd930d183874bf00c4fc9ebf30b838e4774cfcd452e2358b0c1a90fb",
+      "read_back_verified": true
+    },
+    "salary-overview.csv": {
+      "key": "salary/devops/20261021T140856183615Z/salary-overview.csv",
+      "sha256": "034d131003a57dad96e1cc89ab915560a7505fa4b4d51dcb5f3c6d1a7462a98e",
+      "read_back_verified": true
+    },
+    "salary-profile.csv": {
+      "key": "salary/devops/20261021T140856183615Z/salary-profile.csv",
+      "sha256": "2683e4d784290e0e55a883926cc00e3ecaaf05351aa7aca353bf307125d3ed3f",
+      "read_back_verified": true
+    },
+    "salary-quality.csv": {
+      "key": "salary/devops/20261021T140856183615Z/salary-quality.csv",
+      "sha256": "3fde6a26ee64464796d80495ea10c4278ffae34a4cbefaf84f080de836d081cc",
+      "read_back_verified": true
+    },
+    "salary-ranking-coverage.csv": {
+      "key": "salary/devops/20261021T140856183615Z/salary-ranking-coverage.csv",
+      "sha256": "0bf65156005e1d43919a17d3b89ea992c0a1e20b82d21b8e89a52696db4dbdb1",
+      "read_back_verified": true
+    },
+    "stack-salaries.csv": {
+      "key": "salary/devops/20261021T140856183615Z/stack-salaries.csv",
+      "sha256": "e197cf7f9682a2a532665dbdb846dac3b0d72aaae693cd8b76bb81bdaf545ec3",
+      "read_back_verified": true
+    },
+    "summary.md": {
+      "key": "salary/devops/20261021T140856183615Z/summary.md",
+      "sha256": "280344dd9a1737fac2e63843e9109fbafa9aea60af4d1f4a4179bd3d238aea40",
+      "read_back_verified": true
+    },
+    "triples-salary-effects.csv": {
+      "key": "salary/devops/20261021T140856183615Z/triples-salary-effects.csv",
+      "sha256": "1b6c0106ce5438dc2e023191353b72071788de99c3dbd5ff2d75b35f67f53f1b",
+      "read_back_verified": true
+    }
+  }
+}

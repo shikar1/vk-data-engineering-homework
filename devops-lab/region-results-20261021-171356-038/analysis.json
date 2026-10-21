@@ -1,0 +1,62 @@
+{
+  "source": "s3://hh-lake/it_vacancies_2024.csv",
+  "role": "DevOps-инженер",
+  "total": 229388,
+  "matched": 5158,
+  "regions": [
+    "Москва",
+    "Санкт-Петербург",
+    "Екатеринбург"
+  ],
+  "region_selection": "Three largest area labels by DevOps row count; exact area matches, no city/oblast merging",
+  "salary_cohort": "RUR/RUB, gross=false; midpoint or sole supplied positive finite bound; invalid/reversed ranges excluded; same salary.sql as global analysis",
+  "demand_denominator": "All role-matching rows of the region, including rows without skills or comparable salaries",
+  "common_stacks": "Same global top 10 combinations per size evaluated in all three regions, including zero counts",
+  "limitations": "Observed source rows, not unique vacancies or causal regional effects. Missing salaries/skills, experience, employer and remote work can affect comparisons. Low-support medians remain visible with sample counts.",
+  "overview": [
+    {
+      "region": "Москва",
+      "vacancies": 3007,
+      "with_skills": 2015,
+      "without_skills": 992,
+      "salary_count": 406,
+      "salary_count_with_skills": 290,
+      "salary_coverage_pct": 13.501829065513801,
+      "median_salary_rub": 250000.0,
+      "salary_q25_rub": 200000.0,
+      "salary_q75_rub": 325000.0
+    },
+    {
+      "region": "Санкт-Петербург",
+      "vacancies": 686,
+      "with_skills": 488,
+      "without_skills": 198,
+      "salary_count": 103,
+      "salary_count_with_skills": 87,
+      "salary_coverage_pct": 15.01457725947522,
+      "median_salary_rub": 220000.0,
+      "salary_q25_rub": 165000.0,
+      "salary_q75_rub": 275000.0
+    },
+    {
+      "region": "Екатеринбург",
+      "vacancies": 188,
+      "with_skills": 136,
+      "without_skills": 52,
+      "salary_count": 34,
+      "salary_count_with_skills": 30,
+      "salary_coverage_pct": 18.085106382978722,
+      "median_salary_rub": 150000.0,
+      "salary_q25_rub": 112500.0,
+      "salary_q75_rub": 200000.0
+    }
+  ],
+  "validation": {
+    "full_frequency_match": true,
+    "frequency_rows_checked": 169854,
+    "regional_summary_match": true,
+    "top_stack_salary_medians_checked": 90,
+    "method": "Independent Python combinations/Counter for every regional frequency; statistics.median for summaries and top stacks; uses S3-derived normalized row data"
+  },
+  "s3_prefix": "regions/devops/20261021T141449855514Z"
+}

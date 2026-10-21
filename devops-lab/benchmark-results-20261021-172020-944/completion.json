@@ -1,0 +1,215 @@
+{
+  "complete": true,
+  "files": {
+    "configuration.json": {
+      "key": "benchmark/devops/20261021T142021716249Z/configuration.json",
+      "sha256": "e26f0a74ff5e5044a498047dfce5e7d858a14f5b452f990e1a77fff098d820a3",
+      "read_back_verified": true
+    },
+    "duckdb-1/counts.json": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-1/counts.json",
+      "sha256": "015dd1fe5de4035212a7bb5f73033c24ab48587df95bd90418e186db4f24c1eb",
+      "read_back_verified": true
+    },
+    "duckdb-1/pairs.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-1/pairs.csv",
+      "sha256": "85c79968c48c43bf43c2ff3cdd07c75a80c1e96bdeea253977e5694d4da5078b",
+      "read_back_verified": true
+    },
+    "duckdb-1/skills.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-1/skills.csv",
+      "sha256": "296254c141ead06cde2c80f6cbf45ee72472bd9776c13530fbe590c5a689c719",
+      "read_back_verified": true
+    },
+    "duckdb-1/triples.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-1/triples.csv",
+      "sha256": "627272a10df6ce6fc25d15935458709c97296843a1f7ebc05af619954e15262c",
+      "read_back_verified": true
+    },
+    "duckdb-1.log": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-1.log",
+      "sha256": "a20ae0bc67329d9c88fde562d1c1228c296902add7e2455381b7ed68358fc2b3",
+      "read_back_verified": true
+    },
+    "duckdb-2/counts.json": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-2/counts.json",
+      "sha256": "015dd1fe5de4035212a7bb5f73033c24ab48587df95bd90418e186db4f24c1eb",
+      "read_back_verified": true
+    },
+    "duckdb-2/pairs.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-2/pairs.csv",
+      "sha256": "85c79968c48c43bf43c2ff3cdd07c75a80c1e96bdeea253977e5694d4da5078b",
+      "read_back_verified": true
+    },
+    "duckdb-2/skills.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-2/skills.csv",
+      "sha256": "296254c141ead06cde2c80f6cbf45ee72472bd9776c13530fbe590c5a689c719",
+      "read_back_verified": true
+    },
+    "duckdb-2/triples.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-2/triples.csv",
+      "sha256": "627272a10df6ce6fc25d15935458709c97296843a1f7ebc05af619954e15262c",
+      "read_back_verified": true
+    },
+    "duckdb-2.log": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-2.log",
+      "sha256": "a20ae0bc67329d9c88fde562d1c1228c296902add7e2455381b7ed68358fc2b3",
+      "read_back_verified": true
+    },
+    "duckdb-3/counts.json": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-3/counts.json",
+      "sha256": "015dd1fe5de4035212a7bb5f73033c24ab48587df95bd90418e186db4f24c1eb",
+      "read_back_verified": true
+    },
+    "duckdb-3/pairs.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-3/pairs.csv",
+      "sha256": "85c79968c48c43bf43c2ff3cdd07c75a80c1e96bdeea253977e5694d4da5078b",
+      "read_back_verified": true
+    },
+    "duckdb-3/skills.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-3/skills.csv",
+      "sha256": "296254c141ead06cde2c80f6cbf45ee72472bd9776c13530fbe590c5a689c719",
+      "read_back_verified": true
+    },
+    "duckdb-3/triples.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-3/triples.csv",
+      "sha256": "627272a10df6ce6fc25d15935458709c97296843a1f7ebc05af619954e15262c",
+      "read_back_verified": true
+    },
+    "duckdb-3.log": {
+      "key": "benchmark/devops/20261021T142021716249Z/duckdb-3.log",
+      "sha256": "a20ae0bc67329d9c88fde562d1c1228c296902add7e2455381b7ed68358fc2b3",
+      "read_back_verified": true
+    },
+    "fault-failed.log": {
+      "key": "benchmark/devops/20261021T142021716249Z/fault-failed.log",
+      "sha256": "7802c9f656955da87cac68c6abe74bc0eeac884f50acce647483977d2008715a",
+      "read_back_verified": true
+    },
+    "fault-recovered/manifest.json": {
+      "key": "benchmark/devops/20261021T142021716249Z/fault-recovered/manifest.json",
+      "sha256": "503cf333a673d1a5a0a9d078a940754ded03d7bb1f0f36adaa6e404bac8b8b47",
+      "read_back_verified": true
+    },
+    "fault-recovered/pairs.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/fault-recovered/pairs.csv",
+      "sha256": "85c79968c48c43bf43c2ff3cdd07c75a80c1e96bdeea253977e5694d4da5078b",
+      "read_back_verified": true
+    },
+    "fault-recovered/skills.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/fault-recovered/skills.csv",
+      "sha256": "296254c141ead06cde2c80f6cbf45ee72472bd9776c13530fbe590c5a689c719",
+      "read_back_verified": true
+    },
+    "fault-recovered/triples.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/fault-recovered/triples.csv",
+      "sha256": "627272a10df6ce6fc25d15935458709c97296843a1f7ebc05af619954e15262c",
+      "read_back_verified": true
+    },
+    "fault-recovered.log": {
+      "key": "benchmark/devops/20261021T142021716249Z/fault-recovered.log",
+      "sha256": "7c61ba685b2780a469cbbbf5673a715fc76cd7df59330cb56ad32ab90c5985f0",
+      "read_back_verified": true
+    },
+    "fault-test.json": {
+      "key": "benchmark/devops/20261021T142021716249Z/fault-test.json",
+      "sha256": "f8f95b5048f6fdf4b11d6d7f8ffbed65760338f200f7d1e07ff18dc7223454e7",
+      "read_back_verified": true
+    },
+    "mapreduce-1/counts.json": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-1/counts.json",
+      "sha256": "015dd1fe5de4035212a7bb5f73033c24ab48587df95bd90418e186db4f24c1eb",
+      "read_back_verified": true
+    },
+    "mapreduce-1/pairs.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-1/pairs.csv",
+      "sha256": "85c79968c48c43bf43c2ff3cdd07c75a80c1e96bdeea253977e5694d4da5078b",
+      "read_back_verified": true
+    },
+    "mapreduce-1/skills.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-1/skills.csv",
+      "sha256": "296254c141ead06cde2c80f6cbf45ee72472bd9776c13530fbe590c5a689c719",
+      "read_back_verified": true
+    },
+    "mapreduce-1/triples.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-1/triples.csv",
+      "sha256": "627272a10df6ce6fc25d15935458709c97296843a1f7ebc05af619954e15262c",
+      "read_back_verified": true
+    },
+    "mapreduce-1.log": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-1.log",
+      "sha256": "a20ae0bc67329d9c88fde562d1c1228c296902add7e2455381b7ed68358fc2b3",
+      "read_back_verified": true
+    },
+    "mapreduce-2/counts.json": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-2/counts.json",
+      "sha256": "015dd1fe5de4035212a7bb5f73033c24ab48587df95bd90418e186db4f24c1eb",
+      "read_back_verified": true
+    },
+    "mapreduce-2/pairs.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-2/pairs.csv",
+      "sha256": "85c79968c48c43bf43c2ff3cdd07c75a80c1e96bdeea253977e5694d4da5078b",
+      "read_back_verified": true
+    },
+    "mapreduce-2/skills.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-2/skills.csv",
+      "sha256": "296254c141ead06cde2c80f6cbf45ee72472bd9776c13530fbe590c5a689c719",
+      "read_back_verified": true
+    },
+    "mapreduce-2/triples.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-2/triples.csv",
+      "sha256": "627272a10df6ce6fc25d15935458709c97296843a1f7ebc05af619954e15262c",
+      "read_back_verified": true
+    },
+    "mapreduce-2.log": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-2.log",
+      "sha256": "a20ae0bc67329d9c88fde562d1c1228c296902add7e2455381b7ed68358fc2b3",
+      "read_back_verified": true
+    },
+    "mapreduce-3/counts.json": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-3/counts.json",
+      "sha256": "015dd1fe5de4035212a7bb5f73033c24ab48587df95bd90418e186db4f24c1eb",
+      "read_back_verified": true
+    },
+    "mapreduce-3/pairs.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-3/pairs.csv",
+      "sha256": "85c79968c48c43bf43c2ff3cdd07c75a80c1e96bdeea253977e5694d4da5078b",
+      "read_back_verified": true
+    },
+    "mapreduce-3/skills.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-3/skills.csv",
+      "sha256": "296254c141ead06cde2c80f6cbf45ee72472bd9776c13530fbe590c5a689c719",
+      "read_back_verified": true
+    },
+    "mapreduce-3/triples.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-3/triples.csv",
+      "sha256": "627272a10df6ce6fc25d15935458709c97296843a1f7ebc05af619954e15262c",
+      "read_back_verified": true
+    },
+    "mapreduce-3.log": {
+      "key": "benchmark/devops/20261021T142021716249Z/mapreduce-3.log",
+      "sha256": "a20ae0bc67329d9c88fde562d1c1228c296902add7e2455381b7ed68358fc2b3",
+      "read_back_verified": true
+    },
+    "reference-manifest.json": {
+      "key": "benchmark/devops/20261021T142021716249Z/reference-manifest.json",
+      "sha256": "7f39ed04eac77a2691b31f9f6e11b9cf032c385ea2c1b61e292742f1e5d1544b",
+      "read_back_verified": true
+    },
+    "runs.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/runs.csv",
+      "sha256": "9e7a1fd50567b4d7a1163cab996358e22d250f4bfa537f6cf0f64c9278b7d6b7",
+      "read_back_verified": true
+    },
+    "summary.csv": {
+      "key": "benchmark/devops/20261021T142021716249Z/summary.csv",
+      "sha256": "525b43de1cde9c121e12a78499a8d97b9d211451a70956fadadad9cd503e0420",
+      "read_back_verified": true
+    },
+    "summary.md": {
+      "key": "benchmark/devops/20261021T142021716249Z/summary.md",
+      "sha256": "e341b46950c7c93ca5a92202ebbd08af1f5a33f9e9153133ae5c89469f2bd246",
+      "read_back_verified": true
+    }
+  }
+}

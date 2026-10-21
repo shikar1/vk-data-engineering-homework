@@ -1,0 +1,22 @@
+{
+  "injected_after_matching_row": 100,
+  "failure": {
+    "exit_code": 1,
+    "wall_seconds": 1.629243600999871,
+    "peak_rss_mib": 33.5234375,
+    "user_cpu_seconds": 0.7579819999999999,
+    "system_cpu_seconds": 0.141868
+  },
+  "failed_outputs_absent": true,
+  "recovery": {
+    "exit_code": 0,
+    "wall_seconds": 81.64246455700004,
+    "peak_rss_mib": 150.02734375,
+    "user_cpu_seconds": 49.46918,
+    "system_cpu_seconds": 11.634343
+  },
+  "recovery_all_tables_equal": true,
+  "recovery_s3_read_back_passed": true,
+  "recovery_policy": "Manual full restart from the beginning; no automatic retry/checkpoint or distributed worker replacement",
+  "recovery_prefix": "benchmark/devops/20261021T142021716249Z/fault-recovered"
+}

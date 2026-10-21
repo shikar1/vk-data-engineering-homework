@@ -1,0 +1,33 @@
+{
+  "duckdb_version": "1.4.3",
+  "source": "s3://hh-lake/it_vacancies_2024.csv",
+  "reference_prefix": "mapreduce/devops/20261021T135359197166Z",
+  "total": 229388,
+  "matched": 5158,
+  "without_skills": 1624,
+  "compute_seconds": 39.43625175199986,
+  "normalization": "SQL lower + Unicode whitespace collapse; equivalence on this dataset checked against every MapReduce result",
+  "tables": {
+    "skills": {
+      "rows": 1401,
+      "occurrences": 28336,
+      "differences": 0,
+      "equal": true
+    },
+    "pairs": {
+      "rows": 20454,
+      "occurrences": 134651,
+      "differences": 0,
+      "equal": true
+    },
+    "triples": {
+      "rows": 144024,
+      "occurrences": 506549,
+      "differences": 0,
+      "equal": true
+    }
+  },
+  "all_equal": true,
+  "process_peak_rss_mib": 924.33203125,
+  "profiling_note": "Single diagnostic run; not the required three-run benchmark. Compute time covers SQL source read and aggregations; RSS covers the process through verification."
+}

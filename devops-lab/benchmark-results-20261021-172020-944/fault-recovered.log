@@ -1,0 +1,46 @@
+PROGRESS: 50000 records; 1079 matched
+PROGRESS: 100000 records; 2253 matched
+PROGRESS: 150000 records; 3539 matched
+PROGRESS: 200000 records; 4509 matched
+
+skills.csv: 1401 rows; 28336 occurrences; S3 read-back OK
+  linux: 2190
+  kubernetes: 1862
+  docker: 1850
+  devops: 1319
+  ansible: 1252
+  python: 1058
+  ci/cd: 1044
+  bash: 925
+  postgresql: 892
+  grafana: 830
+
+pairs.csv: 20454 rows; 134651 occurrences; S3 read-back OK
+  docker + kubernetes: 1251
+  docker + linux: 1208
+  kubernetes + linux: 1162
+  ansible + linux: 871
+  devops + linux: 842
+  devops + kubernetes: 816
+  devops + docker: 813
+  ansible + docker: 786
+  ansible + kubernetes: 772
+  linux + python: 738
+
+triples.csv: 144024 rows; 506549 occurrences; S3 read-back OK
+  docker + kubernetes + linux: 804
+  devops + docker + kubernetes: 585
+  ansible + docker + kubernetes: 552
+  ansible + docker + linux: 546
+  devops + docker + linux: 542
+  ansible + kubernetes + linux: 532
+  devops + kubernetes + linux: 526
+  ci/cd + docker + kubernetes: 435
+  bash + linux + python: 414
+  docker + grafana + kubernetes: 412
+
+TOTAL: 229388
+MATCHED: 5158
+WITHOUT_SKILLS: 1624
+RESULT: s3://hh-lake/benchmark/devops/20261021T142021716249Z/fault-recovered/
+VERIFIED: all output objects downloaded and checked
