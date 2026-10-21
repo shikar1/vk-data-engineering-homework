@@ -6,3 +6,4 @@ devops-lab/tmp/
 devops-lab/output/
 devops-lab/*.duckdb
 devops-lab/*.duckdb.wal
+!devops-lab/Dockerfile.duckdb
