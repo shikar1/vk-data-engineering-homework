@@ -1,0 +1,33 @@
+{"time": 1792799692.4104748, "who": "a", "event": "LEADER", "epoch": 1, "session_timeout_seconds": 10, "fencing": 0}
+Connection dropped: socket connection broken
+{"time": 1792799692.4428825, "who": "a", "event": "RESUME", "offset": 0, "pairs": 0}
+{"time": 1792799697.588648, "who": "a", "event": "CHECKPOINT", "offset": 10000}
+{"time": 1792799795.1866574, "who": "a", "event": "SESSION", "state": "SUSPENDED"}
+{"time": 1792799795.2155304, "who": "a", "event": "SESSION", "state": "LOST"}
+{"time": 1792799795.247691, "who": "a", "event": "SESSION", "state": "CONNECTED"}
+{"time": 1792799797.5825431, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 20000}
+{"time": 1792799801.339317, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 30000}
+{"time": 1792799804.9754832, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 40000}
+{"time": 1792799808.5661225, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 50000}
+{"time": 1792799812.59477, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 60000}
+{"time": 1792799816.3751862, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 70000}
+{"time": 1792799820.2104342, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 80000}
+{"time": 1792799823.7701383, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 90000}
+{"time": 1792799827.8649006, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 100000}
+{"time": 1792799831.5950015, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 110000}
+{"time": 1792799835.7135606, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 120000}
+{"time": 1792799839.7606177, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 130000}
+{"time": 1792799844.0061035, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 140000}
+{"time": 1792799847.8706982, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 150000}
+{"time": 1792799851.4161105, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 160000}
+{"time": 1792799855.2830198, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 170000}
+{"time": 1792799858.8366807, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 180000}
+{"time": 1792799862.3809843, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 190000}
+{"time": 1792799866.166152, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 200000}
+{"time": 1792799869.6027358, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 210000}
+{"time": 1792799873.0014849, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 220000}
+{"time": 1792799876.4333537, "who": "a", "event": "VERIFIED_HW3", "epoch": 1, "file": "20261024-025252-f0-a-pairs.csv", "sha256": "85c79968c48c43bf43c2ff3cdd07c75a80c1e96bdeea253977e5694d4da5078b", "total": 229388, "matched": 5158, "empty": 1624, "unique_pairs": 20454, "occurrences": 134651}
+{"time": 1792799876.4885929, "who": "a", "event": "WROTE_RESULT", "message": "╨╖╨░╨┐╨╕╤Б╨░╨╗ ╤А╨╡╨╖╤Г╨╗╤М╤В╨░╤В", "version": 2, "epoch": 1}
+{"time": 1792799876.4982784, "who": "a", "event": "SESSION", "state": "LOST"}
+Transition to CONNECTING
+Session has expired

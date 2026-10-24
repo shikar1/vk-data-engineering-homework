@@ -1,0 +1,30 @@
+{"time": 1792799881.2970123, "who": "a", "event": "LEADER", "epoch": 1, "session_timeout_seconds": 10, "fencing": 1}
+{"time": 1792799881.3101754, "who": "a", "event": "RESUME", "offset": 0, "pairs": 0}
+{"time": 1792799883.5913634, "who": "a", "event": "CHECKPOINT", "offset": 10000}
+{"time": 1792799987.0750895, "who": "a", "event": "SESSION", "state": "SUSPENDED"}
+{"time": 1792799987.086236, "who": "a", "event": "SESSION", "state": "LOST"}
+{"time": 1792799987.1106267, "who": "a", "event": "SESSION", "state": "CONNECTED"}
+{"time": 1792799989.2358792, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 20000}
+{"time": 1792799993.118868, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 30000}
+{"time": 1792799996.9839616, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 40000}
+{"time": 1792800001.0993395, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 50000}
+{"time": 1792800004.396388, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 60000}
+{"time": 1792800008.376398, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 70000}
+{"time": 1792800012.336482, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 80000}
+{"time": 1792800015.7637022, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 90000}
+{"time": 1792800019.317434, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 100000}
+{"time": 1792800023.2919648, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 110000}
+{"time": 1792800027.2516575, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 120000}
+{"time": 1792800031.6555681, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 130000}
+{"time": 1792800035.2361293, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 140000}
+{"time": 1792800039.1651645, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 150000}
+{"time": 1792800043.0412583, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 160000}
+{"time": 1792800046.9510236, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 170000}
+{"time": 1792800050.8235652, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 180000}
+{"time": 1792800054.117071, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 190000}
+{"time": 1792800058.1642344, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 200000}
+{"time": 1792800062.0393212, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 210000}
+{"time": 1792800065.6565945, "who": "a", "event": "STALE_CHECKPOINT_REJECTED", "offset": 220000}
+{"time": 1792800069.565712, "who": "a", "event": "VERIFIED_HW3", "epoch": 1, "file": "20261024-025252-f1-a-pairs.csv", "sha256": "85c79968c48c43bf43c2ff3cdd07c75a80c1e96bdeea253977e5694d4da5078b", "total": 229388, "matched": 5158, "empty": 1624, "unique_pairs": 20454, "occurrences": 134651}
+{"time": 1792800069.5742853, "who": "a", "event": "BadVersionError", "message": "запись устаревшего лидера отклонена", "epoch": 1}
+{"time": 1792800069.5887263, "who": "a", "event": "SESSION", "state": "LOST"}

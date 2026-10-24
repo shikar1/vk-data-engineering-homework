@@ -1,0 +1,5 @@
+zk1 This ZooKeeper instance is not currently serving requests
+
+zk2 gaierror [Errno -2] Name or service not known
+zk3 gaierror [Errno -2] Name or service not known
+QUORUM_UNAVAILABLE KazooTimeoutError
