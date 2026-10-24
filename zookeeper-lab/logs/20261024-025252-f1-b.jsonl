@@ -1,0 +1,26 @@
+{"time": 1792799895.5359383, "who": "b", "event": "LEADER", "epoch": 2, "session_timeout_seconds": 10, "fencing": 1}
+{"time": 1792799895.5721564, "who": "b", "event": "RESUME", "offset": 10000, "pairs": 2158}
+{"time": 1792799901.4734674, "who": "b", "event": "CHECKPOINT", "offset": 20000}
+{"time": 1792799905.4181685, "who": "b", "event": "CHECKPOINT", "offset": 30000}
+{"time": 1792799909.5500655, "who": "b", "event": "CHECKPOINT", "offset": 40000}
+{"time": 1792799913.5065396, "who": "b", "event": "CHECKPOINT", "offset": 50000}
+{"time": 1792799917.2359097, "who": "b", "event": "CHECKPOINT", "offset": 60000}
+{"time": 1792799921.6145732, "who": "b", "event": "CHECKPOINT", "offset": 70000}
+{"time": 1792799925.6672628, "who": "b", "event": "CHECKPOINT", "offset": 80000}
+{"time": 1792799929.7689908, "who": "b", "event": "CHECKPOINT", "offset": 90000}
+{"time": 1792799933.7782805, "who": "b", "event": "CHECKPOINT", "offset": 100000}
+{"time": 1792799937.7475245, "who": "b", "event": "CHECKPOINT", "offset": 110000}
+{"time": 1792799942.0150936, "who": "b", "event": "CHECKPOINT", "offset": 120000}
+{"time": 1792799946.2369165, "who": "b", "event": "CHECKPOINT", "offset": 130000}
+{"time": 1792799950.4418778, "who": "b", "event": "CHECKPOINT", "offset": 140000}
+{"time": 1792799954.4177208, "who": "b", "event": "CHECKPOINT", "offset": 150000}
+{"time": 1792799958.2665777, "who": "b", "event": "CHECKPOINT", "offset": 160000}
+{"time": 1792799962.5402904, "who": "b", "event": "CHECKPOINT", "offset": 170000}
+{"time": 1792799966.337617, "who": "b", "event": "CHECKPOINT", "offset": 180000}
+{"time": 1792799970.5401995, "who": "b", "event": "CHECKPOINT", "offset": 190000}
+{"time": 1792799974.7418945, "who": "b", "event": "CHECKPOINT", "offset": 200000}
+{"time": 1792799978.9653459, "who": "b", "event": "CHECKPOINT", "offset": 210000}
+{"time": 1792799982.8365138, "who": "b", "event": "CHECKPOINT", "offset": 220000}
+{"time": 1792799986.6594522, "who": "b", "event": "VERIFIED_HW3", "epoch": 2, "file": "20261024-025252-f1-b-pairs.csv", "sha256": "85c79968c48c43bf43c2ff3cdd07c75a80c1e96bdeea253977e5694d4da5078b", "total": 229388, "matched": 5158, "empty": 1624, "unique_pairs": 20454, "occurrences": 134651}
+{"time": 1792799986.8513017, "who": "b", "event": "WROTE_RESULT", "message": "записал результат", "version": 1, "epoch": 2}
+{"time": 1792799986.8595467, "who": "b", "event": "SESSION", "state": "LOST"}

@@ -1,0 +1,51 @@
+name: homework-zookeeper
+x-zk: &zk
+  image: zookeeper:3.9.6
+  environment: &zk-env
+    ZOO_SERVERS: server.1=zk1:2888:3888;2181 server.2=zk2:2888:3888;2181 server.3=zk3:2888:3888;2181
+    ZOO_TICK_TIME: 2000
+    ZOO_INIT_LIMIT: 10
+    ZOO_SYNC_LIMIT: 5
+    ZOO_MIN_SESSION_TIMEOUT: 10000
+    ZOO_MAX_SESSION_TIMEOUT: 10000
+    ZOO_4LW_COMMANDS_WHITELIST: srvr,ruok,mntr
+services:
+  zk1:
+    <<: *zk
+    hostname: zk1
+    environment:
+      <<: *zk-env
+      ZOO_MY_ID: 1
+    ports: ["127.0.0.1:2181:2181"]
+    volumes: ["zk1-data:/data", "zk1-log:/datalog"]
+  zk2:
+    <<: *zk
+    hostname: zk2
+    environment:
+      <<: *zk-env
+      ZOO_MY_ID: 2
+    ports: ["127.0.0.1:2182:2181"]
+    volumes: ["zk2-data:/data", "zk2-log:/datalog"]
+  zk3:
+    <<: *zk
+    hostname: zk3
+    environment:
+      <<: *zk-env
+      ZOO_MY_ID: 3
+    ports: ["127.0.0.1:2183:2181"]
+    volumes: ["zk3-data:/data", "zk3-log:/datalog"]
+  client:
+    build: .
+    profiles: ["tools"]
+    environment:
+      ZK_HOSTS: zk1:2181,zk2:2181,zk3:2181
+      RUSTFS_ACCESS_KEY: ${RUSTFS_ACCESS_KEY:-}
+      RUSTFS_SECRET_KEY: ${RUSTFS_SECRET_KEY:-}
+    volumes: ["./work:/work", "./logs:/logs", "../devops-lab:/previous:ro"]
+volumes:
+  zk1-data:
+  zk1-log:
+  zk2-data:
+  zk2-log:
+  zk3-data:
+  zk3-log:

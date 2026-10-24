@@ -1,0 +1,17 @@
+dataDir=/data
+dataLogDir=/datalog
+tickTime=2000
+initLimit=10
+syncLimit=5
+autopurge.snapRetainCount=3
+autopurge.purgeInterval=0
+maxClientCnxns=60
+standaloneEnabled=true
+admin.enableServer=true
+server.1=zk1:2888:3888;2181
+server.2=zk2:2888:3888;2181
+server.3=zk3:2888:3888;2181
+4lw.commands.whitelist=srvr,ruok,mntr
+3
+Client port found: 2181. Client address: localhost. Client SSL: false.
+Mode: follower

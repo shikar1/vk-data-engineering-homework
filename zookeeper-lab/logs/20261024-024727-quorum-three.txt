@@ -1,0 +1,32 @@
+zk1 Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC
+Latency min/avg/max: 4/73.75/180
+Received: 5
+Sent: 4
+Connections: 1
+Outstanding: 0
+Zxid: 0x300000008
+Mode: follower
+Node count: 5
+
+zk2 Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC
+Latency min/avg/max: 2/26.0/104
+Received: 7
+Sent: 5
+Connections: 1
+Outstanding: 0
+Zxid: 0x300000008
+Mode: leader
+Node count: 5
+Proposal sizes last/min/max: 48/48/114
+
+zk3 Zookeeper version: 3.9.6-a355171b081b5b60749db8f19cca1528b0df936f, built on 2026-09-03 19:29 UTC
+Latency min/avg/max: 0/0.0/0
+Received: 1
+Sent: 0
+Connections: 1
+Outstanding: 0
+Zxid: 0x300000008
+Mode: follower
+Node count: 5
+
+QUORUM_WRITE_OK

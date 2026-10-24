@@ -1,0 +1,13 @@
+work/
+__pycache__/
+logs/*
+!logs/20261024-024727-quorum-*.txt
+!logs/20261024-024727-zk*-config-status.txt
+!logs/20261024-024727-ephemeral-*.txt
+!logs/20261024-025252-f0-*.jsonl
+!logs/20261024-025252-f1-*.jsonl
+!logs/20261024-025252-f0-summary.json
+!logs/20261024-025252-f1-summary.json
+!logs/20261024-025252-f0-pause.json
+!logs/20261024-025252-f1-pause.json
+!logs/zk-lab-20261024-025252-*-console.txt
